@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    /* background-color: #E9DAC1; */
+    background-color: #D3DEDC;
+}
+
+form {
+    display: inline-block;
+    background-color: #789395;
+    margin-top: 1%;
+    border-radius: 10px;
+    width: 40%;
+}
+
+input {
+    margin: 1rem;
+    height: 3vh;
+    background-color: #E5E3C9;
+    border-radius: 8px;
+    width: 90%;
+    padding: 0.5em;
+    border: none;
+    -o-transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
+    padding: 0.5em;
+    margin: 1rem;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 31.2vw;
+    height: 20vh;
+    background-color: #E5E3C9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 8px;
+    border: none;
+    -o-transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+}
+
+.work-label {
+    margin-left: 1rem;
+    color: #E5E3C9;
+}
+
+.section-header {
+    color: #E5E3C9;
+    font-size: 2vw;
+}
+
+.container {
+    text-align: left;
+    padding: 5%;
+}
