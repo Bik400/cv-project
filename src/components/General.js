@@ -1,20 +1,17 @@
 import React, { Component } from "react";
 
 class General extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
             <div className="container">
                 <label className="section-header">1. General Info</label>
                 <br></br>
-                <input type="text" placeholder="Name *" className="name-input" required></input>
+                <input type="text" placeholder="Name *" className="name-input" onChange={this.props.handleName} value={this.props.generalInfo.name} required></input>
                 <br></br>
-                <input type="email" placeholder="E-Mail *" required></input>
+                <input type="email" placeholder="E-Mail *" onChange={this.props.handleEmail} value={this.props.generalInfo.email} required></input>
                 <br></br>
-                <input type="tel" placeholder="Phone Number *" required></input>
+                <input type="tel" placeholder="Phone Number *" onChange={this.props.handlePhone} value={this.props.generalInfo.phone} required></input>
             </div>
         );
     };
