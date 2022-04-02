@@ -31,8 +31,10 @@ input {
 
 input:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    border: 2px solid rgba(81, 203, 238, 1);
+    /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
+    /* border: 2px solid rgba(81, 203, 238, 1); */
+    box-shadow: 0 0 5px rgba(0, 68, 127, 0.7);
+    border: 2px solid rgba(0, 68, 127, 0.7);
     padding: 0.5em;
     margin: 1rem;
 }
@@ -75,4 +77,25 @@ textarea {
 .container {
     text-align: left;
     padding: 5%;
+}
+
+.submit-btn {
+    width: 5vw;
+    height: 5vh;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+}
+
+.edit-btn {
+    width: 5vw;
+    height: 5vh;
+    text-align: center;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
 }
