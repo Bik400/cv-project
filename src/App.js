@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import General from "./components/General";
 import Practical from "./components/Practical";
 import Education from "./components/Education";
+import Form from "./components/Form";
 import "./styles/styles.css"; 
 class App extends Component {
   constructor(props) {
@@ -179,7 +180,6 @@ class App extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log("the submit button was pressed");
     this.setState({
       edit: false
     });
@@ -206,10 +206,8 @@ class App extends Component {
     } else {
       return (
         <div>
-          <h1>The form was submitted</h1>
-          <button onClick={this.handleEdit}>Edit</button>
+          <Form onBtnClick={this.handleEdit} generalInfo={this.state.general} educationInfo={this.state.education} workInfo={this.state.work}/>          
         </div>
-
       )
     }
   }
