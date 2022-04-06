@@ -1,3 +1,4 @@
+/* Form Styles */
 body {
     margin: 0;
     padding: 0;
@@ -98,4 +99,88 @@ textarea {
 
 .edit-btn:hover {
     cursor: pointer;
+}
+
+/* Resume Layout styles */
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    border: 1px solid #000;
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    padding: 1rem;
+    background-color: #FCF9F4;
+    color: #000;
+}
+
+.form-name {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.general-info-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.phone-email {
+    display: flex;
+    width: 100%;
+    max-width: 35%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30.5%;
+}
+
+.education-container {
+    margin-top: 6%;
+    justify-content:left;
+}
+
+.school-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.major {
+    margin-top: 0;
+    text-align: left;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.company-position {
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    align-items: center;
+}
+
+.work-container {
+    justify-content: left;
+}
+
+.work-date {
+    display: flex;
+    align-items: center;
+}
+
+.tasks {
+    text-align: left;
 }
