@@ -17,7 +17,8 @@ class App extends Component {
       education: {
         school: "",
         major: "",
-        graduation: ""
+        graduation: "",
+        coursework: ""
       },
       work: {
         company: "",
@@ -36,6 +37,7 @@ class App extends Component {
     this.handleSchoolChange = this.handleSchoolChange.bind(this);
     this.handleMajorChange = this.handleMajorChange.bind(this);
     this.handleGraduationChange = this.handleGraduationChange.bind(this);
+    this.handleCourseworkChange = this.handleCourseworkChange.bind(this);
 
     this.handleCompanyChange = this.handleCompanyChange.bind(this);
     this.handlePositionChange = this.handlePositionChange.bind(this);
@@ -86,7 +88,8 @@ class App extends Component {
       education: {
         school: e.target.value,
         major: education.major,
-        graduation: education.graduation
+        graduation: education.graduation,
+        coursework: education.coursework
       }
     })
   };
@@ -97,7 +100,8 @@ class App extends Component {
       education: {
         school: education.school,
         major: e.target.value,
-        graduation: education.graduation
+        graduation: education.graduation,
+        coursework: education.coursework
       }
     })
   };
@@ -108,7 +112,20 @@ class App extends Component {
       education: {
         school: education.school,
         major: education.major,
-        graduation: e.target.value
+        graduation: e.target.value,
+        coursework: education.coursework
+      }
+    })
+  };
+
+  handleCourseworkChange(e) {
+    var education = {...this.state.education};
+    this.setState({
+      education: {
+        school: education.school,
+        major: education.major,
+        graduation: education.graduation,
+        coursework: e.target.value
       }
     })
   };
@@ -197,7 +214,7 @@ class App extends Component {
         <div>
           <form onSubmit={this.handleSubmit}>
             <General generalInfo={this.state.general} handleName={this.handleNameChange}  handleEmail={this.handleEmailChange} handlePhone={this.handlePhoneChange}/>
-            <Education educationInfo={this.state.education} handleSchool={this.handleSchoolChange} handleMajor={this.handleMajorChange} handleGraduation={this.handleGraduationChange}/>
+            <Education educationInfo={this.state.education} handleSchool={this.handleSchoolChange} handleMajor={this.handleMajorChange} handleGraduation={this.handleGraduationChange} handleCoursework={this.handleCourseworkChange}/>
             <Practical workInfo={this.state.work} handleCompany={this.handleCompanyChange} handlePosition={this.handlePositionChange} handleTasks={this.handleTasksChange} handleStartDate={this.handleStartDateChange} handleEndDate={this.handleEndDateChange}/>
             <button type="submit" className="submit-btn">Submit</button>
           </form>

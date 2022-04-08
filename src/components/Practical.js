@@ -7,7 +7,7 @@ class Practical extends Component {
             <div className="container">
                 <label className="section-header">3. Work</label>
                 <br></br>
-                <input type="text" placeholder="Company Name" className="company-name" value={this.props.workInfo.company} onChange={this.props.handleCompany}></input>
+                <input type="text" placeholder="Company Name" value={this.props.workInfo.company} onChange={this.props.handleCompany}></input>
                 <br></br>
                 <input type="text" placeholder="Position Title" value={this.props.workInfo.position} onChange={this.props.handlePosition}></input>
                 <br></br>
