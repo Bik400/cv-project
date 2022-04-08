@@ -4,8 +4,7 @@ body {
     padding: 0;
     text-align: center;
     height: 100vh;
-    /* background-color: #E9DAC1; */
-    background-color: #D3DEDC;
+    background-color: #E9DAC1;
 }
 
 form {
@@ -32,10 +31,8 @@ input {
 
 input:focus {
     outline: none;
-    /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
-    /* border: 2px solid rgba(81, 203, 238, 1); */
-    box-shadow: 0 0 5px rgba(0, 68, 127, 0.7);
-    border: 2px solid rgba(0, 68, 127, 0.7);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
     padding: 0.5em;
     margin: 1rem;
 }
@@ -91,16 +88,6 @@ textarea {
     cursor: pointer;
 }
 
-.edit-btn {
-    width: 5vw;
-    height: 5vh;
-    text-align: center;
-}
-
-.edit-btn:hover {
-    cursor: pointer;
-}
-
 /* Resume Layout styles */
 .body {
     margin: 0;
@@ -108,13 +95,13 @@ textarea {
 }
 
 .resume-container {
-    border: 1px solid #000;
+    border: 2px solid #000;
     height: 100vh;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 1%;
     padding: 1rem;
-    background-color: #FCF9F4;
+    background-color: #F7ECDE;
     color: #000;
 }
 
@@ -131,15 +118,12 @@ textarea {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 .phone-email {
     display: flex;
-    width: 100%;
-    max-width: 35%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 30.5%;
+    gap: 2rem;
 }
 
 .education-container {
@@ -158,22 +142,45 @@ textarea {
     text-align: left;
 }
 
+.coursework-div {
+    display: flex;
+    align-items: center;
+}
+
+.relevant-coursework {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.coursework {
+    text-decoration: none;
+}
+
+.coursework li {
+    float: left;
+    padding: 5px;
+    margin: 10px;
+}
+
 .company-info {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     width: 100%;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 1.5rem;
 }
 
 .company-position {
-    display: flex;
-    justify-content: space-between;
-    width: 28%;
-    align-items: center;
+    font-size: 1.2rem;
 }
 
 .work-container {
     justify-content: left;
+    margin-top: 10rem;
 }
 
 .work-date {
@@ -181,6 +188,30 @@ textarea {
     align-items: center;
 }
 
+.tasks-container {
+    display: flex;
+    align-items: center;
+}
+
 .tasks {
     text-align: left;
+    margin-left: 5px;
+}
+
+
+.edit-btn {
+    width: 7vw;
+    height: 5vh;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #2E8B57;
+    border-radius: 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    background-color: #D8E9A8;
 }
